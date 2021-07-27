@@ -1,0 +1,43 @@
+.header{
+    text-align: center;
+}
+.main_div{
+    text-align: center;
+    background-color: slategrey;
+    line-height: 50px;
+    height: 50px;
+}
+
+#Div1
+{
+    background-color: aqua;
+    text-align: center;
+    padding-top: 1px;
+    height: 350px;
+
+}
+#Div2
+{
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding-top: 1px;
+    height: 250px;
+    
+
+}
+#Div3
+{
+    background-color: yellow;
+    text-align: center;
+    line-height: 50px;
+    height: 250px;
+
+}
+#Div4
+{
+    background-color: skyblue;
+    text-align: left;
+    padding-left: 40%;
+    padding-top: 10px;
+}
