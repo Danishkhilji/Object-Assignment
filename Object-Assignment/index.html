@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<style>
+
+</style>
+<body>
+    <div class="header">
+    <h1>Assignment</h1>
+    <h3> Object , Array of object , Constructor </h3>
+</div>
+
+
+    <div class="main_div">
+        <button onclick="divVisibility('Div1');">Question 1</button>
+
+        <button onclick="divVisibility('Div2');">Question 2</button>
+
+        <button onclick="divVisibility('Div3');">Question 3</button>
+
+        <button onclick="divVisibility('Div4');">Question 4</button>
+    </div>
+
+
+    <div class="inner_div">
+
+        <div id="Div1">
+            <h1>Assignment Question 1</h1>
+            <p id="totalPrice"> Hellp world</p>
+            <br><br>
+            <strong>
+            <p id="Gtotal"></p></strong>
+        </div>
+        
+        <div id="Div2">
+            <h1>Assignment Question 2</h1>
+            <p id="output"></p>
+        </div>
+        <div id="Div3">
+            <h1>Assignment Question 3</h1>
+            <p id="student"></p>
+        </div>
+
+
+
+        <div id="Div4">
+            
+            <h1>Assignment Question 4</h1>
+            <div id="details">
+                <h2>Population details</h2>
+                <form action="">
+        
+                    <p>Name</p>
+                    <input type="text" name="" id="name">
+        
+                    <br>
+        
+                    <p>Gender:</p>
+                    <input type="radio" value="Male" name="gender" id="gender">
+                    <label>Male</label><br>
+                    <input type="radio" value="Female" name="gender" id="gender">
+                    <label>Female</label><br>
+        
+                    <br>
+        
+                    <label>Education:</label>
+        
+                    <select id="education">
+                        <option value="" disabled selected hidden>Your Education</option>
+                        <option value="Matric">Matric</option>
+                        <option value="Inter">Inter</option>
+                        <option value="Graduate">Graduate</option>
+                        <option value="Master">Master</option>
+                    </select>
+        
+                    <br><br>
+                    <label>Profession:</label>
+        
+                    <select id="profession">
+                        <option value="" disabled selected hidden>Your Profession</option>
+                        <option value="Student">Student</option>
+                        <option value="Teacher">Teacher</option>
+                        <option value="Businessman">Businessman</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <br><br>
+        
+                    <button   id="btn">Submit</button>
+                    <div id="msg">
+                        <pre></pre>
+                    </div>
+        
+                </form>
+        
+            </div>
+        </div>
+    
+    
+    </div>
+
+
+
+
+    <script src="./app.js"></script>
+
+    <script>
+        var divs = ["Div1", "Div2", "Div3", "Div4"];
+        var visibleDivId = null;
+        function divVisibility(divId) {
+            if (visibleDivId === divId) {
+                visibleDivId = null;
+            } else {
+                visibleDivId = divId;
+            }
+            hideNonVisibleDivs();
+        }
+        function hideNonVisibleDivs() {
+            var i, divId, div;
+            for (i = 0; i < divs.length; i++) {
+                divId = divs[i];
+                div = document.getElementById(divId);
+                if (visibleDivId === divId) {
+                    div.style.display = "block";
+                } else {
+                    div.style.display = "none";
+                }
+            }
+        }</script>
+</body>
+
+</html>
